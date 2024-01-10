@@ -1,5 +1,5 @@
 import {EnvironmentProviders, makeEnvironmentProviders} from '@angular/core';
-import {PlogConfig} from '@gpeel/plog';
+import {PlogConfig} from './plog.config';
 import {plogProviders} from './plog.initialize';
 
 export function providePlog(plogConfig: PlogConfig): EnvironmentProviders{

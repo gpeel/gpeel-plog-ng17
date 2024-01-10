@@ -5,7 +5,7 @@ export interface PlogConfig {
 function fnNull(message?: any, ...optionalParams: any[]): void {
 }
 
-export const Plog = {
+export const PlogConfig = {
 
   debug: fnNull,
   info: fnNull,

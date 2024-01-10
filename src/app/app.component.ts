@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import {Plog} from '@gpeel/plog';
+import {PlogConfig} from '@gpeel/plog';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +13,11 @@ export class AppComponent {
   title = 'gpeel-plog-ng17';
 
   constructor() {
-    Plog.info('My info!', 'info2', 'info3');
-    Plog.warn('My Warn!');
-    Plog.error('My Error!');
-    Plog.perf('computing for 34 times');
-    Plog.ngOnChanges('To test no css');
-    Plog.ngOnInit('To test test');
+    PlogConfig.info('My info!', 'info2', 'info3');
+    PlogConfig.warn('My Warn!');
+    PlogConfig.error('My Error!');
+    PlogConfig.perf('computing for 34 times');
+    PlogConfig.ngOnChanges('To test no css');
+    PlogConfig.ngOnInit('To test test');
   }
 }

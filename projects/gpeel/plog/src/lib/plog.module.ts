@@ -1,11 +1,7 @@
 import {CommonModule} from '@angular/common';
-import {APP_INITIALIZER, InjectionToken, ModuleWithProviders, NgModule} from '@angular/core';
-import {Plog, PlogConfig} from './plog';
-import {initialize, plogProviders} from './plog.initialize';
-import {PLOG_CONFIG_DEFAULT} from './PLOG_CONFIG_DEFAULT';
-
-export const PLOG_CONFIG = new InjectionToken<any[]>('LOGGER_CONFIG');
-
+import {ModuleWithProviders, NgModule} from '@angular/core';
+import {PlogConfig} from './plog.config';
+import {plogProviders} from './plog.initialize';
 
 @NgModule({
   declarations: [],

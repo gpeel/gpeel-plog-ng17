@@ -1,12 +1,12 @@
-import {PlogConfig} from './plog';
+import {PlogConfig} from './plog.config';
 
 /**
- * A PlogConfig is a simple object defining the loggers names.
- * All loggers/names are optional.
- * When a name is not present => this means that there will be no log for this logger.
+ * A PlogConfig is a simple object defining the activated loggers names.
+ * Here All loggers/names are defined. But you can comment out some of them to disable them.
+ * When a name is not declared => this means that there will be no log for this logger.
  * You can change whatever CSS and prefix you want.
  * BUT you can't ADD a new logger.
- * The list of loggers is defined in Plog.ts
+ * The list of available loggers is defined in Plog.ts
  */
 export const PLOG_CONFIG_DEFAULT: PlogConfig = {
     debug: 'color:limegreen',

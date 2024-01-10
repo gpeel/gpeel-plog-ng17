@@ -1,7 +1,7 @@
 import {ApplicationConfig, importProvidersFrom} from '@angular/core';
 import { provideRouter } from '@angular/router';
-import {PlogModule} from '@gpeel/plog';
-import {providePlog} from '../../projects/gpeel/plog/src/lib/plog.standalone';
+import {providePlog} from '@gpeel/plog';
+// import {PlogModule} from '@gpeel/plog';
 
 import { routes } from './app.routes';
 import {plogConfig} from './plog-config';

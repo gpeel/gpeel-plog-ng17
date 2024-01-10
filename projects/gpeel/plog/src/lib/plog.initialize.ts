@@ -1,9 +1,10 @@
-import {APP_INITIALIZER} from '@angular/core';
-import {PLOG_CONFIG_DEFAULT} from '@gpeel/plog';
-import {Plog, PlogConfig} from './plog';
-import {PLOG_CONFIG} from './plog.module';
+import {APP_INITIALIZER, InjectionToken} from '@angular/core';
+import {PLOG_CONFIG_DEFAULT} from './PLOG_CONFIG_DEFAULT';
+import {PlogConfig} from './plog.config';
 
 let initialized = false;
+const PLOG_CONFIG = new InjectionToken<any[]>('PLOG_CONFIG');
+
 
 export  function plogProviders(plogConfig: PlogConfig) {
   return [
@@ -46,7 +47,7 @@ interface Indexable {
 
 export function initialize(plogConfig: PlogConfig): void {
 
-  console.log('INIT');
+  // console.log('INIT');
 
   Object.keys(plogConfig).forEach(key => {
     const maybeArray = plogConfig[key];
@@ -68,9 +69,9 @@ export function initialize(plogConfig: PlogConfig): void {
       }
     }
     if (color === 'test' || color === 'no-css') {
-      (Plog as Indexable)[key] = console.info.bind(console, prefixCapitalized);
+      (PlogConfig as Indexable)[key] = console.info.bind(console, prefixCapitalized);
     } else {
-      (Plog as Indexable)[key] = console.info.bind(console, `%c${prefixCapitalized}`, `${color}`);
+      (PlogConfig as Indexable)[key] = console.info.bind(console, `%c${prefixCapitalized}`, `${color}`);
     }
   });
 }
