@@ -1,6 +1,6 @@
 import {APP_INITIALIZER, InjectionToken} from '@angular/core';
 import {PLOG_CONFIG_DEFAULT} from './PLOG_CONFIG_DEFAULT';
-import {PlogConfig} from './plog.config';
+import {Plog, PlogConfig} from './plog.config';
 
 let initialized = false;
 const PLOG_CONFIG = new InjectionToken<any[]>('PLOG_CONFIG');
@@ -69,9 +69,9 @@ export function initialize(plogConfig: PlogConfig): void {
       }
     }
     if (color === 'test' || color === 'no-css') {
-      (PlogConfig as Indexable)[key] = console.info.bind(console, prefixCapitalized);
+      (Plog as Indexable)[key] = console.info.bind(console, prefixCapitalized);
     } else {
-      (PlogConfig as Indexable)[key] = console.info.bind(console, `%c${prefixCapitalized}`, `${color}`);
+      (Plog as Indexable)[key] = console.info.bind(console, `%c${prefixCapitalized}`, `${color}`);
     }
   });
 }
