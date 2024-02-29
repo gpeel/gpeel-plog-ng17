@@ -5,8 +5,8 @@ import {PlogConfig} from './plog.config';
  * Here All loggers/names are defined. But you can comment out some of them to disable them.
  * When a name is not declared => this means that there will be no log for this logger.
  * You can change whatever CSS and prefix you want.
- * BUT you can't ADD a new logger.
- * The list of available loggers is defined in Plog.ts
+ * BUT you can't ADD a new logger by simply adding a line here.
+ * To add a new logger you also have to add la logger to the list of available loggers defined in plog.config.ts
  */
 export const PLOG_CONFIG_DEFAULT: PlogConfig = {
     debug: 'color:limegreen',

@@ -2,7 +2,7 @@ import {EnvironmentProviders, makeEnvironmentProviders} from '@angular/core';
 import {PlogConfig} from './plog.config';
 import {plogProviders} from './plog.initialize';
 
-export function providePlog(plogConfig: PlogConfig): EnvironmentProviders{
+export function providePlog(plogConfig: PlogConfig): EnvironmentProviders {
 
   const providers = plogProviders(plogConfig);
 
@@ -12,7 +12,7 @@ export function providePlog(plogConfig: PlogConfig): EnvironmentProviders{
 
 /**
  * Source for inspiration:
- * <angulat17>/packages/router/src/provide_router.ts
+ * <angular17>/packages/router/src/provide_router.ts
  *
  * export function provideRouter(routes: Routes, ...features: RouterFeatures[]): EnvironmentProviders {
  *   return makeEnvironmentProviders([
