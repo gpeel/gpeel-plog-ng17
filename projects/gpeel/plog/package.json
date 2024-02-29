@@ -1,6 +1,6 @@
 {
   "name": "@gpeel/plog",
-  "version": "17.1.0",
+  "version": "17.1.1",
   "peerDependencies": {
     "@angular/common": ">=17.0.0",
     "@angular/core": ">=17.0.0"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gpeel/plog.git"
+    "url": "git+https://github.com/gpeel/gpeel-plog-ng17"
   },
   "author": {
     "name": "Gauthier Peel",
@@ -23,7 +23,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gpeel/plog/issues"
+    "url": "https://github.com/gpeel/gpeel-plog-ng17/issues"
   },
-  "homepage": "https://github.com/gpeel/plog"
+  "homepage": "https://github.com/gpeel/gpeel-plog-ng17"
 }
