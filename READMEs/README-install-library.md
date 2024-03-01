@@ -1,8 +1,10 @@
-# GpeelPlogNg12
+# versions
 
 @gpeel/plog@12.0.0 is the first version migrated for Angular 12, 13 or 14
 
 Here is the addtional steps used to install the library into this project.
+
+We are now compatible for version 17
 
 # multi CLI Projects
 
