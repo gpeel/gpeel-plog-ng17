@@ -30,23 +30,24 @@ To get those style the activated loggers have been defined in a file (for exampl
 
 ````typescript
 export const plogConfig: PlogConfig = {
-   
-    createComponent: ['color:green;', 'New-@Comp'],
 
-    error: 'color:red; font-size:1rem;',
-    warn: 'color:orange',
-    info: 'color:blue',
-    debug: 'color:limegreen;font-weight:bold',
+  createComponent: ['color:green;', 'New-@Comp'],
 
-    action: ['color:#8f72cf; font-weight:bold;', '@ACTION'], // to log inside Action method
-    tu: ['color:blue; font-size:1rem;', 'TU'],
-    errorState: ['color:#cf3c04', '@ERROR'], // to log error in Store
+  error: 'color:red; font-size:1rem;',
+  warn: 'color:orange',
+  info: 'color:blue',
+  debug: 'color:limegreen;font-weight:bold',
+
+  action: ['color:#8f72cf; font-weight:bold;', '@ACTION'], // to log inside Action method
+  tu: ['color:blue; font-size:1rem;', 'TU'],
+  errorState: ['color:#cf3c04', '@ERROR'], // to log error in Store
 
 };
 ````
 
 And the result is =>
 ![img.png](clickable-logs-code-navigable.png)
+
 
 ## SETUP for STANDALONE strategy
 Your app.config.ts will typically look like this
@@ -62,7 +63,6 @@ export const appConfig: ApplicationConfig = {
 };
 
 ````
-
 
 ## DECLARATION as a MgModule
 
@@ -84,7 +84,7 @@ import {environment} from '../environments/environment';
 export class AppModule {
 }
 ````
- 
+
 ## Default loggers definition
 
 For your developpment you typically would activate much more loggers.

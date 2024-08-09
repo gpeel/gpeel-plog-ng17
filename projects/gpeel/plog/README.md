@@ -48,6 +48,22 @@ export const plogConfig: PlogConfig = {
 And the result is =>
 ![img.png](clickable-logs-code-navigable.png)
 
+
+## SETUP for STANDALONE strategy
+Your app.config.ts will typically look like this
+
+````typescript
+import {providePlog} from '@gpeel/plog';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    providePlog(plogConfig), // this will initialize the logger methods, otherwise no log output done
+    provideRouter(routes)
+  ]
+};
+
+````
+
 ## DECLARATION as a MgModule
 
 ````typescript
