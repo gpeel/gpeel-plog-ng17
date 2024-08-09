@@ -2,8 +2,10 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9
 
-For Angular 16 use @gpeel/plog 16.1.0 or more recent For Angular 12 to 15 => use @gpeel/plog 12.2.0 For Angular
-11.x.y => use @gpeel/plog@11.0.1 (last version for angular 11)
+- For Angular 18 use @gpeel/plog 17+ which enabled providePlog(plogConfig) and also keeps PlogModule.forRoot(plogConfig)
+- For Angular 16 use @gpeel/plog 16.6.0
+- For Angular 12 to 15 => use @gpeel/plog 12.2.0
+- For Angular 11.x.y => use @gpeel/plog@11.0.1 (last version for angular 11)
 
 npm repo:
 https://www.npmjs.com/package/@gpeel/plog
@@ -24,7 +26,7 @@ Medium story : https://medium.com/p/62dd10ba3d10/edit
 
 ![img.png](clickable-logs-in-browser.png)
 
-### You get obvious **colors** and also keep the **logs clickable** to navigate to your source code.
+### You get obvious **colors** and also keep the **logs clickable** to navigate to your originated source code.
 
 To get those style the activated loggers have been defined in a file (for example plog-config.ts) as follow:
 
